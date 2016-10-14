@@ -1,0 +1,5 @@
+quiz form : text box as input for admin for the question fields(all 6 fields)(post form)
+quiz submit : read all the data from request parameters(post form) 
+			  new quiz model
+			  save new quiz model
+			  

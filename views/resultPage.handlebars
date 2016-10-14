@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+{{>head}}
+<body>
+{{>menu}}    
+<br><br><br>
+<div class="container">
+    <div class="row">
+       <div class="well">
+            <h2> Scorecard <h2>
+            <h4>  Roll: {{marks.roll}} &nbsp;&nbsp;  Name:  {{marks.xname}} </h4>
+			    <p>Physics:  {{marks.physics}}</p>
+			    <p>Chemistry: {{marks.chemistry}}</p>		
+			    <p>Mathematics: {{marks.maths}}</p>
+			    <p>Computer:  {{marks.computer}}</p>
+			    <p>Total Marks: {{marks.totalmarks}}</p>
+		</div>
+    </div>
+</div>
+
+{{>jsIncludes}}
+</body>
+</html>

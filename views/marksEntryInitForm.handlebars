@@ -1,0 +1,23 @@
+<html>
+<head>
+{{>head}}
+</head>
+<body>
+{{>menu}}
+<div class="container">
+  <div class="jumbotron">
+     <h3> Fetch Student Data </h3>
+          <h4>{{{ErrorMessage}}}</h4>
+          <form method="post" action="/marksEntryForm">
+            <label for="roll">Your Roll number</label>
+            <input type="text" required class="form-control input-lg" name="rollnumber"/>
+          <BR/>    
+          <input type="submit" class="btn btn-primary btn-lg"/>
+          <BR/>
+      </form>
+       
+  </div>
+  </div>
+{{>jsIncludes}}
+</body>
+</html>

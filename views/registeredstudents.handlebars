@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+{{>head}}
+<script src="sorttable.js"></script>
+</head>
+<body>
+{{>menu}}
+ <div class="container">
+   <div class="row">
+		<div align="center">
+			<H2>All Students Tabular Marksheet </H2>
+    
+          <div class="table-responsive">     
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Roll</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Student Mobile</th>
+              <th>DOB</th>
+              <th>Father's Name</th>
+              <th>Mother's Name</th>
+              <th>Parent's Mobile No.</th>
+              <th>Address:</th>
+              <th>Fl.No.</th>
+              <th>Landmark</th>
+              <th>City</th>
+              <th>Pin Code</th>
+              <th>State</th>
+            </tr>
+          </thead>
+          <tbody>
+          {{#each candidate}}
+          <tr>
+              <td>{{this.rollnumber}}</td>
+              <td>{{this.username}}</td>
+              <td>{{this.email}}</td>
+              <td>{{this.studentmobile}}</td>
+              <td>{{this.dob}}</td>
+              <td>{{this.fname}}</td>
+              <td>{{this.mname}}</td>
+              <td>{{this.parentmobile}}</td>
+              <td>{{this.address}}</td>
+              <td>{{this.flat}}</td>
+              <td>{{this.landmark}}</td>
+              <td>{{this.city}}</td>
+              <td>{{this.pincode}}</td>
+              <td>{{this.state}}</td>
+            </tr>
+          {{/each}}
+          </tbody>
+        </table>
+       </div>
+		</div>
+		<br/>
+    </div>
+ </div>
+ 
+  {{>jsIncludes}}
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+{{>head}}
+</head>
+<body>
+{{>menu}}
+ <div class="container">
+	<div class="row">
+	  <!-- <div class="col-md-4 col-md-offset-4 panel panel-default"> -->
+		<h1 align="center" class="margin-base-vertical">Sign up to be the change</h1>
+		<h5 align="left" class="margin-base-vertical"><code>{{errorMessage}}</code></h5>
+		<div class="col-md-4">
+		<form class="margin-base-vertical" method="post" action="/register-submit">
+		  <p class="input-group ">
+			<span class="input-group-addon"><span class="icon-user"></span></span>
+			<input type="text" required class="form-control input-lg" name="username" placeholder="Username:" /> 
+		  </p>
+		  <p class="input-group ">
+			<span class="input-group-addon"><span class="icon-user"></span></span>
+			<input type="text" required class="form-control input-lg" name="gender" placeholder="Gender:" /> 
+		  </p>	
+		  <p class="input-group ">
+			<span class="input-group-addon"><span class="icon-envelope"></span></span>
+			<input type="email" required class="form-control input-lg" name="email" placeholder="Email:" />
+		  </p>
+		  <p class="input-group ">
+			<span class="input-group-addon"><span class="icon-envelope"></span></span>
+			<input type="number" required class="form-control input-lg" name="studentmobile" placeholder="Student's Mobile No.:" />
+		  </p>
+
+		  <p class="input-group ">
+			<span class="input-group-addon"><span class="icon-user"></span></span>
+			<input type="date" required class="form-control input-lg" name="dob" placeholder="Date Of Birth:" /> 
+
+		  <p class="input-group ">
+			<span class="input-group-addon"><span class="icon-user"></span></span>
+			<input type="text" required class="form-control input-lg" name="fname" placeholder="Father's Name:" /> 
+		  </p>
+		  <p class="input-group ">
+			<span class="input-group-addon"><span class="icon-user"></span></span>
+			<input type="text" class="form-control input-lg" name="mname" placeholder="Mother's Name:" /> 
+		  </p>		
+		  <p class="input-group ">
+			<span class="input-group-addon"><span class="icon-envelope"></span></span>
+			<input type="number" required class="form-control input-lg" name="parentmobile" placeholder="Parent's Mobile No.:" />
+		  </p>  
+		  <p class="input-group ">
+			<span class="input-group-addon"><span class="icon-user"></span></span>
+			<input type="text" required class="form-control input-lg" name="address" placeholder="Address:" /> 
+		  </p>
+		  <p class="input-group ">
+			<span class="input-group-addon"><span class="icon-user"></span></span>
+			<input type="text" required class="form-control input-lg" name="flat" placeholder="Fl.No." /> 
+		  </p>		  
+		  <p class="input-group ">
+			<span class="input-group-addon"><span class="icon-envelope"></span></span>
+			<input type="text"  class="form-control input-lg" name="landmark" placeholder="Landmark:" />
+		  </p>
+
+		  <p class="input-group ">
+			<span class="input-group-addon"><span class="icon-user"></span></span>
+			<input type="text" required class="form-control input-lg" name="city" placeholder="City:" /> 
+		  </p>
+		  <p class="input-group ">
+			<span class="input-group-addon"><span class="icon-user"></span></span>
+			<input type="number"  class="form-control input-lg" name="pincode" placeholder="Pin Code:" /> 
+		  </p>
+		  <p class="input-group ">
+			<span class="input-group-addon"><span class="icon-user"></span></span>
+			<select name=slist class="form-control input-lg" name="state" placeholder="State:">
+			<option value="">------------Select State------------</option>
+			<option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+			<option value="Andhra Pradesh">Andhra Pradesh</option>
+			<option value="Arunachal Pradesh">Arunachal Pradesh</option>
+			<option value="Assam">Assam</option>
+			<option value="Bihar">Bihar</option>
+			<option value="Chandigarh">Chandigarh</option>
+			<option value="Chhattisgarh">Chhattisgarh</option>
+			<option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
+			<option value="Daman and Diu">Daman and Diu</option>
+			<option value="Delhi">Delhi</option>
+			<option value="Goa">Goa</option>
+			<option value="Gujarat">Gujarat</option>
+			<option value="Haryana">Haryana</option>
+			<option value="Himachal Pradesh">Himachal Pradesh</option>
+			<option value="Jammu and Kashmir">Jammu and Kashmir</option>
+			<option value="Jharkhand">Jharkhand</option>
+			<option value="Karnataka">Karnataka</option>
+			<option value="Kerala">Kerala</option>
+			<option value="Lakshadweep">Lakshadweep</option>
+			<option value="Madhya Pradesh">Madhya Pradesh</option>
+			<option value="Maharashtra">Maharashtra</option>
+			<option value="Manipur">Manipur</option>
+			<option value="Meghalaya">Meghalaya</option>
+			<option value="Mizoram">Mizoram</option>
+			<option value="Nagaland">Nagaland</option>
+			<option value="Orissa">Orissa</option>
+			<option value="Pondicherry">Pondicherry</option>
+			<option value="Punjab">Punjab</option>
+			<option value="Rajasthan">Rajasthan</option>
+			<option value="Sikkim">Sikkim</option>
+			<option value="Tamil Nadu">Tamil Nadu</option>
+			<option value="Tripura">Tripura</option>
+			<option value="Uttaranchal">Uttaranchal</option>
+			<option value="Uttar Pradesh">Uttar Pradesh</option>
+			<option value="West Bengal">West Bengal</option>
+			</select>
+
+		  </p>
+		  <p class="input-group ">
+			<span class="input-group-addon"><span class="icon-edit"></span></span>
+			<input type="text" required class="form-control input-lg" name="rollnumber" placeholder="RollNumber:" />
+
+          <p class="input-group ">
+			<span class="input-group-addon"><span class="icon-key"></span></span>
+			<input type="password" required class="form-control input-lg" name="password" placeholder="Password:" />
+		  </p>
+		  <p class="help-block text-center">
+            <small>We hate spams, so don't worrry</small>
+          </p>
+		  <p class="text-center">
+			<button type="submit" class="btn btn-success btn-lg">Create Account</button>
+		  </p>
+		</form>
+		<br/>
+	 </div>
+	</div>
+   </div>
+
+	{{>jsIncludes}}
+</body>
+</html>

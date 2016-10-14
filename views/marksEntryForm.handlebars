@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+{{>head}}
+<body>
+{{>menu}}    
+<br><br><br>
+<div class="container">
+    <div class="row  col-md-6 col-md-offset-2 panel panel-default">
+	    <h3>Student's  Profile</h3>
+		<table >
+		  <tr>
+		    <td>Student Name: {{user.username}}</td>
+		    <td>Roll: {{user.rollnumber}}</td>
+		    <td>Gender: {{user.gender}}</td>
+		    <td>DOB: {{user.dob}}</td>		
+		    <td>Student Mobile: {{user.studentmobile}}</td>
+		  </tr>
+		  <tr>
+		    <td>Father's Name: {{user.fname}}</td>
+		    <td>Mother's Name: {{user.mname}}</td>
+		    <td>Parent Mob.: {{user.parentmobile}}</td>
+		    <td>Address: {{user.address}}</td>
+		    <td>Fl No.: {{user.flat}}</td>
+		  </tr>
+		  <tr>
+		    <td>Landmark: {{user.landmark}}</td>
+		    <td><City: {{user.city}}</td>
+		    <td>State: {{user.state}}</td>
+		  </tr>
+		</table>
+	</div>
+			
+	<div class="row  col-md-6 col-md-offset-2 panel panel-default">
+		<div class="well">
+		    <form method="post" action="/marksEntry">
+		      <fieldset>
+		      	<legend>Academics</legend>
+		        Student Name:
+		        <input type="text" name="nm" required value={{user.username}} readonly
+		        class="form-control input-sm" placeholder="Name">
+		        Roll No.:
+		        <input type="number" name="roll" required class="form-control input-sm" placeholder="Roll" readonly value={{user.rollnumber}}>
+		        <h3>-:Marks:-</h3><br>
+				Physics:
+		        <input type="text" name="physics" required class="form-control input-sm" placeholder="Physics">
+				Chemistry:
+		        <input type="text" name="chemistry" required class="form-control input-sm" placeholder="Chemistry">
+				Maths:
+		        <input type="text" name="maths" required class="form-control input-sm" placeholder="Maths">
+				Computer Programming:
+		        <input type="text" name="computer" required class="form-control input-sm" placeholder="Computer Programming">
+		        <input type="submit" value="Submit">
+		       </fieldset>
+		    </form>
+	    </div>
+    </div>
+</div>
+
+{{>jsIncludes}}
+</body>
+</html>
